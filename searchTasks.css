@@ -1,0 +1,74 @@
+/* for the search tasks pane */
+div#searchTasks{
+    background-color: rgba(114, 113, 113, 0.904);
+}
+div#searchPane{
+    width: 40%;
+    margin: auto;
+    padding: 2rem;
+    background-color: orange;
+}
+div#searchPane input[type="text"]{
+    display: inline-block;
+    width: 88%;
+    padding: 2rem;
+    font-size: 2rem;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    outline: none;
+}
+div#searchPane button{
+    padding: 2rem;
+    font-size: 2rem;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    outline: none;
+    color: white;
+    background-color: black;
+}
+div#searchPane div#searchResultsBox{
+    height: 40vh;
+    margin: 1rem 0rem;
+    overflow-y: auto;
+    background-color: rgb(94, 94, 94);
+    padding: 2rem;
+}
+
+
+/* for responsiveness */
+@media only screen and ( min-width: 0px ) {
+    div#searchPane input[type="text"]{
+        width: 80%;
+    }
+    div#searchPane {
+        width: 95%;
+    }
+}
+
+@media only screen and ( min-width: 500px ) {
+    div#searchPane input[type="text"]{
+        width: 75%;
+    }
+    div#searchPane {
+        width: 80%;
+    }
+}
+
+@media only screen and ( min-width: 1000px ) {
+    div#searchPane input[type="text"]{
+        width: 85%;
+    }
+    div#searchPane {
+        width: 60%;
+    }
+}
+
+@media only screen and ( min-width: 1100px ) {
+    div#searchPane{
+        width: 40%;
+    }
+}

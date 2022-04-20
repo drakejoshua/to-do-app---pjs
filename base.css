@@ -1,0 +1,47 @@
+/* base styles */
+body{
+    margin: 0px;
+}
+:root{
+    font-size: 10px;
+}
+*{
+    box-sizing: border-box;
+}
+
+
+/* for the navbar */
+nav{
+    background-color: black;
+    padding: 2.5rem;
+}
+nav h1{
+    margin: 0rem;
+    font-size: 3.5rem;
+    color: white;
+    text-transform: capitalize;
+    font-family: candara, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+/* for the grid layout of all actions */
+div#actions-ctn{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 90vh;
+    justify-content: center;
+    grid-template-areas: 'actions';
+}
+div.action{
+    grid-area: actions;
+}
+
+/* disallow user to select text inthis elements */
+.taskText{
+    user-select: none;
+}
+
+div#searchTasks, div#addTasks{
+    display: none;
+}

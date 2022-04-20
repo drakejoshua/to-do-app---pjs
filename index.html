@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My To - Do </title>
+
+    <!-- My github resource base link -->
+    <base href="https://drakejoshua.github.io/">
+
+    <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="to-do-app---pjs/base.css">
+    <link rel="stylesheet" href="to-do-app---pjs/showTasks.css">
+    <link rel="stylesheet" href="to-do-app---pjs/searchTasks.css">
+    <link rel="stylesheet" href="to-do-app---pjs/addTasks.css">
+
+    <!-- fontawesome api -->
+    <script src="https://kit.fontawesome.com/c963c47e7a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <h1>my to - do</h1>
+    </nav>
+    <div id="actions-ctn">
+        <div class="action" id="showTasks">
+            <div id="taskPane">
+                <button id="search">
+                    <span class="fas fa-search"></span>
+                    search
+                </button>
+                <div id="taskBox"></div>
+                <button id="add">
+                    <span class="fas fa-plus"></span>
+                    Add Task
+                </button>
+            </div>
+        </div>
+        <div class="action" id="addTasks">
+            <div id="taskAddPane">
+                <h2>add tasks</h2>
+                <input type="text" id="taskAddInput">
+                <input type="checkbox" id="taskCheckUrgent">
+                <span> urgent? </span>
+                <button id="taskAddButton"> add task </button>
+                <button class="cancelBtn"> cancel </button>
+            </div>
+        </div>
+        <div class="action" id="searchTasks">
+            <div id="searchPane">
+                <input type="text" id="searchInput">
+                <button id="searchBtn"> <span class="fas fa-search"></span> </button>
+                <div id="searchResultsBox"></div>
+                <button class="cancelBtn"> cancel </button>
+            </div>
+        </div>
+    </div>
+    <script src="to-do-app---pjs/script.js"></script>
+</body>
+</html>
